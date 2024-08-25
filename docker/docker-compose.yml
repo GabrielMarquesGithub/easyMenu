@@ -1,0 +1,12 @@
+services:
+  database:
+    container_name: ${APP_NAME}-container-database
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - MSSQL_SA_PASSWORD=${DB_PASSWORD}
+      - ACCEPT_EULA=Y
+    ports:
+      - ${DB_PORT}:1433
+    # Passando variáveis de ambiente para o container
+    env_file:
+      - ../configs/.env

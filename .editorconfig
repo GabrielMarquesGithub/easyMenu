@@ -1,0 +1,14 @@
+# Remova a linha abaixo se quiser herdar as configurações do .editorconfig de diretórios superiores
+root = true
+
+#### Opções Principais do EditorConfig ####
+
+# Recuo e espaçamento
+indent_size = 4
+indent_style = space
+tab_width = 4
+
+# Preferências de nova linha
+end_of_line = crlf
+insert_final_newline = false
+
