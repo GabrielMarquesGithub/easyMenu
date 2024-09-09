@@ -1,5 +1,3 @@
-@using Main.Models;
-
 @model IEnumerable<Food>;
 
 @{
@@ -11,8 +9,8 @@
 @foreach (Food food in Model)
 {
     <div>
-    <h4>@food.</h4>
-    <p>@food.Description</p>
-    <p>@food.Price</p>
-</div>
+        <h4>@food.Name</h4>
+        <p>@food.Description</p>
+        <p>@food.Price</p>
+    </div>
 }

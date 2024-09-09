@@ -4,7 +4,7 @@ using Main.Repositories.Interfaces;
 
 namespace Main.Repositories;
 
-sealed public class CategoriesRepository : ICategoriesRepository
+public sealed class CategoriesRepository : ICategoriesRepository
 {
     private readonly AppDbContext _context;
 

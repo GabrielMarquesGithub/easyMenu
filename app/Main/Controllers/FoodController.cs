@@ -1,3 +1,4 @@
+using Main.Models;
 using Main.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
