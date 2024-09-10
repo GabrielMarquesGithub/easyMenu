@@ -15,7 +15,7 @@ public sealed class FoodController : Controller
 
     public IActionResult List()
     {
-        var foods = _foodRepository.Foods;
+        IEnumerable<Food> foods = _foodRepository.Foods;
         return View(foods);
     }
 

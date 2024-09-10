@@ -4,13 +4,28 @@
     ViewData["Title"] = "Comidas";
 }
 
-<h2>Comidas</h2>
+<h2>Todos os pratos</h2>
 
-@foreach (Food food in Model)
-{
-    <div>
-        <h4>@food.Name</h4>
-        <p>@food.Description</p>
-        <p>@food.Price</p>
-    </div>
-}
+<div class="row">
+    @foreach (Food food in Model)
+    {
+        <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img style="object-fit: cover" class="h-100 img-fluid rounded-start" alt="@food.Name" src="@food.ImageUrl" >
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">@food.Name</h5>
+                            <p class="card-text">@food.Description</p>
+                            <p class="card-text">
+                                <small class="text-muted">@food.Price</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

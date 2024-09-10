@@ -9,7 +9,7 @@ namespace Main.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.Sql("DELETE FROM Categories;");
-            migrationBuilder.Sql("DBCC CHECKIDENT ('Categories', RESEED, 0);");
+            migrationBuilder.Sql("DBCC CHECKIDENT ('Categories', RESEED, 1);");
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "Name", "Description" },

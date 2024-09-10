@@ -18,4 +18,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\images\png-clipart-rectangle-shape-shape-angle-rectangle-thumbnail.pngZone.Identifier" />
+  </ItemGroup>
+
 </Project>
